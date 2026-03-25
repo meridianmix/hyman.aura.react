@@ -1,7 +1,10 @@
+import kanevskyImg from '../assets/images/kanevsky.avif';
+import hymanImg from '../assets/images/hyman.avif';
+
 const DOCTORS = [
   {
     variant: 'kanevsky',
-    photoSrc: '/kanevsky.jpg',
+    photoSrc: kanevskyImg,
     photoAlt: 'Dr. Jonathan Kanevsky',
     name: 'Dr. Jonathan Kanevsky',
     title: 'Board-Certified Plastic Surgeon \u00b7 Beverly Hills, CA',
@@ -15,7 +18,7 @@ const DOCTORS = [
   },
   {
     variant: 'hyman',
-    photoSrc: '/hyman.jpg',
+    photoSrc: hymanImg,
     photoAlt: 'Dr. Mark Hyman',
     name: 'Dr. Mark Hyman',
     title: 'Functional Medicine Physician \u00b7 Bestselling Author',

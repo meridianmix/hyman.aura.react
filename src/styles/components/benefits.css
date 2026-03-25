@@ -3,13 +3,69 @@
    ============================================================ */
 
 .benefits-section { padding: 100px 80px; background: #f7f1eb; }
-.benefits-header { display: flex; flex-direction: column; gap: 16px; margin-bottom: 56px; max-width: 640px; }
+.benefits-header { display: flex; flex-direction: column; gap: 16px; margin-bottom: 52px; max-width: 640px; }
 
-.benefits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
-.benefit-card { background: white; padding: 36px 28px; border: 1px solid var(--sand); border-radius: 0.375rem; position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
-.benefit-card:hover { transform: translateY(-5px); box-shadow: 0 14px 48px rgba(42,36,32,0.08); }
-.benefit-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--blush), var(--green-light)); transform: scaleX(0); transition: transform 0.3s; }
-.benefit-card:hover::before { transform: scaleX(1); }
-.benefit-icon { font-size: 1.8rem; margin-bottom: 18px; }
-.benefit-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--charcoal); margin-bottom: 10px; }
-.benefit-body { font-size: 1.0625rem; line-height: 1.75; color: var(--taupe); font-weight: 400; }
+/* Bento grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 14px;
+}
+
+/* tall card spans 2 rows */
+.bento-tall { grid-row: span 2; }
+
+/* wide card spans full 3 cols */
+.bento-wide { grid-column: span 3; }
+
+/* Base card */
+.bento-card {
+  border-radius: 1rem;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Color themes */
+.bento-natural  { background: #e8ede9; }
+.bento-two      { background: #fff; border: 1px solid var(--sand); }
+.bento-risks    { background: #f0ecd8; }
+.bento-alloclae { background: var(--green); }
+
+/* Icon */
+.bento-icon { display: flex; align-items: center; }
+.bento-natural  .bento-icon { color: #4a6e5e; }
+.bento-two      .bento-icon { color: var(--blush-deep); }
+.bento-risks    .bento-icon { color: var(--green); }
+.bento-alloclae .bento-icon { color: rgba(250,248,245,0.7); }
+
+/* Title */
+.bento-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.bento-natural  .bento-title,
+.bento-two      .bento-title { color: var(--charcoal); }
+.bento-risks    .bento-title { color: var(--charcoal); }
+.bento-alloclae .bento-title { color: var(--ivory); }
+
+/* Body */
+.bento-body { font-size: 0.975rem; line-height: 1.75; font-weight: 400; }
+.bento-natural  .bento-body,
+.bento-two      .bento-body { color: var(--taupe); }
+.bento-risks    .bento-body { color: var(--taupe); }
+.bento-alloclae .bento-body { color: rgba(250,248,245,0.8); }
+
+/* Wide card inner layout */
+.bento-wide-inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+}

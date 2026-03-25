@@ -2,7 +2,13 @@
    RESPONSIVE — All breakpoints (must load after components)
    ============================================================ */
 
-@media (max-width: 1100px) { .benefits-grid { grid-template-columns: repeat(2,1fr); } .episode-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 1100px) {
+  .bento-grid { grid-template-columns: 1fr 1fr; grid-template-rows: none; }
+  .bento-tall { grid-row: span 1; grid-column: span 1; }
+  .bento-wide { grid-column: span 2; }
+  .bento-wide-inner { grid-template-columns: 1fr 1fr; }
+  .episode-grid { grid-template-columns: repeat(2,1fr); }
+}
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; height: auto; max-height: none; overflow: visible; }
   /* !important overrides inline styles on the hero inner divs */
@@ -30,7 +36,10 @@
   .nav-cta { padding: 9px 14px; font-size: 0.62rem; letter-spacing: 0.10em; white-space: nowrap; }
   .hero-left { padding: 40px 20px 28px; }
   .hero-right { padding: 32px 20px; }
-  .benefits-grid, .testimonials-grid, .episode-grid { grid-template-columns: 1fr; }
+  .bento-grid { grid-template-columns: 1fr; }
+  .bento-tall, .bento-wide { grid-column: span 1; grid-row: span 1; }
+  .bento-wide-inner { grid-template-columns: 1fr; gap: 16px; }
+  .testimonials-grid, .episode-grid { grid-template-columns: 1fr; }
   .proof-strip { flex-direction: column; gap: 14px; }
   .proof-sep { display: none; }
   .benefits-section, .testimonials-section, .doctors-section, .consult-section, .episode-section { padding: 60px 20px; }

@@ -9,6 +9,7 @@ export default function Nav({ homeHref = '/', consultHref = '/#consult' }: NavPr
   return (
     <nav>
       <Link to={homeHref} className="nav-logo">
+        <img src="/Aurafav-white.avif" alt="Aura Logo" style={{ height: '32px', width: 'auto', display: 'block', marginBottom: '4px' }} />
         Aura Aesthetica
         <span>Dr. Jonathan Kanevsky &middot; Beverly Hills</span>
       </Link>

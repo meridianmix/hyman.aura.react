@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom';
 import {
   getUTMParams,
@@ -264,38 +265,26 @@ export default function ConsultationForm({
       {trustVariant === 'hero' ? (
         <div className="form-trust">
           <div className="trust-line">
-            <svg viewBox="0 0 16 16" fill="none">
-              <path d="M8 1.5l1.75 3.5 3.9.55-2.8 2.7.65 3.9L8 10.25l-3.5 1.9.65-3.9-2.8-2.7 3.9-.55L8 1.5z" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
+            <Icon icon="solar:star-bold" />
             Board-Certified &middot; 5,000+ procedures &middot; Beverly Hills
           </div>
           <div className="trust-line">
-            <svg viewBox="0 0 16 16" fill="none">
-              <rect x="2" y="5" width="12" height="9" rx="1" stroke="currentColor" strokeWidth="1.2" />
-              <path d="M5 5V4a3 3 0 016 0v1" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
+            <Icon icon="solar:lock-bold" />
             Your info is 100% private and never shared
           </div>
           <div className="trust-line">
-            <svg viewBox="0 0 16 16" fill="none">
-              <path d="M2 8l4 4 8-8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
+            <Icon icon="solar:check-circle-bold" />
             No obligation &mdash; just an honest conversation
           </div>
         </div>
       ) : (
         <div className="form-trust" style={{ marginTop: '16px' }}>
           <div className="trust-line">
-            <svg viewBox="0 0 16 16" fill="none">
-              <rect x="2" y="5" width="12" height="9" rx="1" stroke="currentColor" strokeWidth="1.2" />
-              <path d="M5 5V4a3 3 0 016 0v1" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
+            <Icon icon="solar:lock-bold" />
             100% private &mdash; your info is never shared
           </div>
           <div className="trust-line">
-            <svg viewBox="0 0 16 16" fill="none">
-              <path d="M2 8l4 4 8-8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
+            <Icon icon="solar:check-circle-bold" />
             We respond within one business day
           </div>
         </div>

@@ -7,7 +7,8 @@ export default function Footer({ homePrefix = '' }: FooterProps) {
     <>
       <footer>
         <div className="footer-logo">
-          Aura Aesthetica
+          <img src="/Aurafav-white.avif" alt="Aura Logo" style={{ height: '36px', width: 'auto', display: 'block', marginBottom: '8px' }} />
+          <span style={{ fontFamily: "'Cormorant Garamond', serif", display: 'block', marginBottom: '4px' }}>AURA AESTHETICA</span>
           <span>Beverly Hills, CA &middot; (310) 773-4596</span>
         </div>
         <div className="footer-links">

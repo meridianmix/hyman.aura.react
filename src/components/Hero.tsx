@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { Icon } from '@iconify/react';
 import ConsultationForm from './ConsultationForm';
 
 const SLIDES = [
@@ -86,7 +87,7 @@ export default function Hero() {
               >
                 <p
                   style={{
-                    fontFamily: "'Jost',sans-serif",
+                    fontFamily: "'DM Sans',sans-serif",
                     fontSize: '0.78rem',
                     letterSpacing: '0.1em',
                     textTransform: 'uppercase',
@@ -128,7 +129,7 @@ export default function Hero() {
           />
           <span
             style={{
-              fontFamily: "'Jost',sans-serif",
+              fontFamily: "'DM Sans',sans-serif",
               fontSize: '0.72rem',
               letterSpacing: '0.14em',
               textTransform: 'uppercase',
@@ -164,9 +165,7 @@ export default function Hero() {
           onMouseOver={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.35)')}
           onMouseOut={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.18)')}
         >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round">
-            <polyline points="15 18 9 12 15 6" />
-          </svg>
+          <Icon icon="solar:alt-arrow-left-bold" width="16" height="16" color="white" />
         </button>
 
         {/* Next arrow */}
@@ -194,9 +193,7 @@ export default function Hero() {
           onMouseOver={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.35)')}
           onMouseOut={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.18)')}
         >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round">
-            <polyline points="9 18 15 12 9 6" />
-          </svg>
+          <Icon icon="solar:alt-arrow-right-bold" width="16" height="16" color="white" />
         </button>
 
         {/* Dot indicators */}
@@ -232,7 +229,7 @@ export default function Hero() {
       >
         <p
           style={{
-            fontFamily: "'Jost',sans-serif",
+            fontFamily: "'DM Sans',sans-serif",
             fontSize: '0.72rem',
             letterSpacing: '0.18em',
             textTransform: 'uppercase',
@@ -258,7 +255,7 @@ export default function Hero() {
         </h1>
         <p
           style={{
-            fontFamily: "'Jost',sans-serif",
+            fontFamily: "'DM Sans',sans-serif",
             fontSize: '0.97rem',
             lineHeight: 1.8,
             color: '#6b5c52',
@@ -280,7 +277,7 @@ export default function Hero() {
           </div>
           <p
             style={{
-              fontFamily: "'Jost',sans-serif",
+              fontFamily: "'DM Sans',sans-serif",
               fontSize: '0.82rem',
               color: '#6b5c52',
               fontWeight: 300,

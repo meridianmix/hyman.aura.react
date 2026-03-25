@@ -1,34 +1,23 @@
+import { Icon } from '@iconify/react';
+
 const TOPICS = [
   {
     color: '#5c7a6e',
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" />
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-      </svg>
-    ),
+    icon: <Icon icon="solar:earth-bold" width="18" height="18" color="white" />,
     borderColor: '#5c7a6e',
     title: 'Why implants may not be the answer',
     body: 'From implant illness to BIA-ALCL, Dr. Hyman and Dr. Kanevsky explored why thousands of women are choosing to remove \u2014 or never place \u2014 breast implants.',
   },
   {
     color: '#c9a99a',
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-      </svg>
-    ),
+    icon: <Icon icon="solar:heart-bold" width="18" height="18" color="white" />,
     borderColor: '#c9a99a',
     title: 'The power of your own fat tissue',
-    body: "Fat transfer breast augmentation uses your body's own cells \u2014 no foreign material, no capsular contracture risk, and natural results that move and feel like you.",
+    body: "Fat transfer breast augmentation uses your body\u2019s own cells \u2014 no foreign material, no capsular contracture risk, and natural results that move and feel like you.",
   },
   {
     color: '#8a9e92',
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11l-4 7h14l-4-7V3" />
-      </svg>
-    ),
+    icon: <Icon icon="solar:flask-bold" width="18" height="18" color="white" />,
     borderColor: '#b8a898',
     title: 'The Alloclae breakthrough',
     body: 'Dr. Kanevsky is one of the few surgeons in the U.S. offering Alloclae \u2014 a next-generation scaffold technology discussed in the episode that enhances and maintains fat transfer results.',
@@ -41,7 +30,7 @@ export default function EpisodeRecap() {
       <div style={{ maxWidth: '860px', margin: '0 auto', textAlign: 'center' }}>
         <p
           style={{
-            fontFamily: "'Jost',sans-serif",
+            fontFamily: "'DM Sans',sans-serif",
             fontSize: '0.75rem',
             letterSpacing: '0.18em',
             textTransform: 'uppercase',
@@ -107,7 +96,7 @@ export default function EpisodeRecap() {
               </h3>
               <p
                 style={{
-                  fontFamily: "'Jost',sans-serif",
+                  fontFamily: "'DM Sans',sans-serif",
                   fontSize: '0.93rem',
                   color: '#6b5c52',
                   lineHeight: 1.7,
@@ -121,7 +110,7 @@ export default function EpisodeRecap() {
         </div>
         <p
           style={{
-            fontFamily: "'Jost',sans-serif",
+            fontFamily: "'DM Sans',sans-serif",
             fontSize: '0.85rem',
             color: '#b8a898',
             marginTop: '36px',

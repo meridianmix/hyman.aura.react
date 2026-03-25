@@ -41,7 +41,7 @@ export default function ProofStrip() {
             </p>
             <p
               style={{
-                fontFamily: "'Jost',sans-serif",
+                fontFamily: "'DM Sans',sans-serif",
                 fontSize: '0.72rem',
                 letterSpacing: '0.14em',
                 textTransform: 'uppercase',

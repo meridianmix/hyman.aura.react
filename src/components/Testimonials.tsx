@@ -1,8 +1,6 @@
-const StarIcon = () => (
-  <svg viewBox="0 0 12 12" fill="currentColor">
-    <path d="M6 1l1.3 2.7 3 .43-2.17 2.1.5 3L6 7.9l-2.63 1.43.5-3L1.7 4.13l3-.43z" />
-  </svg>
-);
+import { Icon } from '@iconify/react';
+
+const StarIcon = () => <Icon icon="solar:star-bold" />;
 
 const TESTIMONIALS = [
   {

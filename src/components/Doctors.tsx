@@ -1,7 +1,7 @@
 const DOCTORS = [
   {
     variant: 'kanevsky',
-    photoSrc: 'https://ik.imagekit.io/efnhxhh9p/hyman/kanevsky.jpg',
+    photoSrc: '/kanevsky.jpg',
     photoAlt: 'Dr. Jonathan Kanevsky',
     name: 'Dr. Jonathan Kanevsky',
     title: 'Board-Certified Plastic Surgeon \u00b7 Beverly Hills, CA',
@@ -15,7 +15,7 @@ const DOCTORS = [
   },
   {
     variant: 'hyman',
-    photoSrc: 'https://ik.imagekit.io/efnhxhh9p/hyman/hyman.jpg',
+    photoSrc: '/hyman.jpg',
     photoAlt: 'Dr. Mark Hyman',
     name: 'Dr. Mark Hyman',
     title: 'Functional Medicine Physician \u00b7 Bestselling Author',

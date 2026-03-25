@@ -170,7 +170,8 @@ nav {
 .doctor-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; }
 .doctor-card.kanevsky::after { background: linear-gradient(to right, var(--blush), var(--blush-deep)); }
 .doctor-card.hyman::after { background: linear-gradient(to right, var(--green), var(--sage)); }
-.doctor-photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 22px; border: 3px solid rgba(250,248,245,0.15); box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+.doctor-photo { width: calc(100% + 80px); height: 500px; object-fit: cover; object-position: center 15%; margin: -44px -40px 28px -40px; display: block; border-radius: 0; border: none; box-shadow: none; }
+.doctor-card.hyman .doctor-photo { object-fit: contain; object-position: center center; background: #c8824a; }
 .doctor-name { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; color: var(--ivory); margin-bottom: 4px; }
 .doctor-title-text { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(250,248,245,0.4); margin-bottom: 22px; font-weight: 400; }
 .doctor-bio { font-size: 0.86rem; line-height: 1.8; color: rgba(250,248,245,0.6); font-weight: 300; margin-bottom: 24px; }

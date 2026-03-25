@@ -15,6 +15,7 @@ export default function Benefits() {
         </p>
       </div>
 
+
       <div className="bento-grid">
 
         {/* Card 1 — tall, left */}

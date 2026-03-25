@@ -1,8 +1,8 @@
 const STATS = [
   { value: '5,000+', label: 'Successful Procedures', valueColor: '#faf8f5', border: true },
-  { value: 'Zero', label: 'Implants Since 2016', valueColor: '#faf8f5', border: true },
-  { value: '15+', label: 'Years Experience', valueColor: '#faf8f5', border: true },
-  { value: '100%', label: 'Board-Certified', valueColor: '#faf8f5', border: true },
+  { value: 'Zero',   label: 'Implants Since 2016',   valueColor: '#faf8f5', border: true },
+  { value: '15+',    label: 'Years Experience',       valueColor: '#faf8f5', border: true },
+  { value: '100%',   label: 'Board-Certified',        valueColor: '#faf8f5', border: true },
   { value: '\u2666', label: "As Heard on Dr. Hyman\u2019s Show", valueColor: '#c9a99a', border: false },
 ];
 

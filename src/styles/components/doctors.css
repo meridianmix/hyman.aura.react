@@ -6,7 +6,7 @@
 .doctors-section .section-eyebrow { color: var(--gold-light); }
 .doctors-section .section-title { color: var(--ivory); }
 .doctors-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 52px; }
-.doctor-card { background: rgba(250,248,245,0.04); border: 1px solid rgba(250,248,245,0.08); padding: 44px 40px; position: relative; }
+.doctor-card { background: rgba(250,248,245,0.04); border: 1px solid rgba(250,248,245,0.08); border-radius: 0.375rem; padding: 44px 40px; position: relative; overflow: hidden; }
 .doctor-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; }
 .doctor-card.kanevsky::after { background: linear-gradient(to right, var(--blush), var(--blush-deep)); }
 .doctor-card.hyman::after { background: linear-gradient(to right, var(--green), var(--sage)); }

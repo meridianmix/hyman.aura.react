@@ -5,7 +5,7 @@
 .episode-section { padding: 100px 80px; background: #f0ebe4; }
 .episode-header { text-align: center; margin-bottom: 52px; }
 .episode-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
-.episode-card { background: white; padding: 36px 32px; border: 1px solid var(--sand); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+.episode-card { background: white; padding: 36px 32px; border: 1px solid var(--sand); border-radius: 0.375rem; position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
 .episode-card:hover { transform: translateY(-5px); box-shadow: 0 14px 48px rgba(42,36,32,0.08); }
 .episode-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--blush), var(--green-light)); transform: scaleX(0); transition: transform 0.3s; }
 .episode-card:hover::before { transform: scaleX(1); }

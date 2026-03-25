@@ -2,17 +2,17 @@ import { Icon } from '@iconify/react';
 
 const TOPICS = [
   {
-    icon: <Icon icon="solar:danger-bold" width="32" height="32" color="#5c7a6e" />,
+    icon: <Icon icon="solar:adhesive-plaster-2-bold-duotone" width="32" height="32" color="#d2a679" />,
     title: 'Why implants may not be the answer',
     body: 'From implant illness to BIA-ALCL, Dr. Hyman and Dr. Kanevsky explored why thousands of women are choosing to remove — or never place — breast implants.',
   },
   {
-    icon: <Icon icon="solar:heart-bold" width="32" height="32" color="#b8897a" />,
+    icon: <Icon icon="solar:cloud-bold" width="32" height="32" color="#c98f7c" />,
     title: 'The power of your own fat tissue',
     body: "Fat transfer breast augmentation uses your body's own cells — no foreign material, no capsular contracture risk, and natural results that move and feel like you.",
   },
   {
-    icon: <Icon icon="solar:diploma-bold" width="32" height="32" color="#4a6e5e" />,
+    icon: <Icon icon="solar:stethoscope-bold-duotone" width="32" height="32" color="#5c7a6e" />,
     title: 'The Alloclae breakthrough',
     body: 'Dr. Kanevsky is one of the few surgeons in the U.S. offering Alloclae — a next-generation scaffold technology discussed in the episode that enhances and maintains fat transfer results.',
   },

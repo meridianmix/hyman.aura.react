@@ -1,0 +1,48 @@
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero { display: grid; grid-template-columns: 1.1fr 0.9fr; min-height: calc(100vh - 88px); position: relative; }
+.hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 15% 80%, rgba(138,158,140,0.07) 0%, transparent 55%), radial-gradient(ellipse at 85% 15%, rgba(201,169,154,0.09) 0%, transparent 50%); pointer-events: none; }
+
+.hero-left { padding: 72px 56px 72px 80px; display: flex; flex-direction: column; justify-content: center; animation: fadeUp 0.9s ease both; }
+
+.heard-on-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; background: rgba(92,122,110,0.08); border: 1px solid rgba(92,122,110,0.2); border-radius: 100px; margin-bottom: 32px; width: fit-content; }
+.heard-on-badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green-light); animation: pulse 2s ease infinite; }
+.heard-on-badge span { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-light); font-weight: 500; }
+
+.hero-eyebrow { font-size: 0.70rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--blush-deep); font-weight: 500; margin-bottom: 16px; }
+
+.hero-title { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.6rem, 4vw, 3.8rem); line-height: 1.05; color: var(--charcoal); margin-bottom: 22px; }
+.hero-title em { font-style: italic; color: var(--blush-deep); }
+
+.hero-proof-row { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; }
+.proof-avatar-stack { display: flex; }
+.proof-avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--sand); border: 2px solid white; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 0.75rem; color: var(--taupe); margin-left: -8px; }
+.proof-avatar:first-child { margin-left: 0; background: #e8ddd5; }
+.proof-text { font-size: 0.80rem; color: var(--taupe); font-weight: 300; }
+.proof-text strong { font-weight: 500; color: var(--charcoal); }
+
+.hero-desc { font-size: 1.02rem; line-height: 1.8; color: var(--taupe); max-width: 500px; margin-bottom: 36px; font-weight: 300; }
+.hero-desc strong { color: var(--charcoal); font-weight: 500; }
+
+.hero-bullets { display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px; }
+.hero-bullet { display: flex; align-items: center; gap: 12px; font-size: 0.88rem; color: var(--charcoal); font-weight: 400; }
+.bullet-check { width: 18px; height: 18px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.bullet-check svg { width: 10px; height: 10px; }
+
+.hero-cta-group { display: flex; flex-direction: column; gap: 12px; max-width: 360px; }
+
+.btn-hero { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 18px 36px; background: var(--charcoal); color: var(--ivory); font-size: 0.74rem; font-weight: 500; letter-spacing: 0.20em; text-transform: uppercase; text-decoration: none; border: none; cursor: pointer; transition: background 0.3s; }
+.btn-hero:hover { background: var(--green); }
+.btn-hero span { position: relative; }
+.btn-hero svg { width: 16px; height: 16px; }
+
+.btn-ghost { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 17px 36px; background: transparent; color: var(--charcoal); font-size: 0.74rem; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(42,36,32,0.2); transition: all 0.3s; }
+.btn-ghost:hover { border-color: var(--charcoal); }
+
+.urgency-note { display: flex; align-items: center; gap: 7px; font-size: 0.72rem; color: var(--urgent); font-weight: 400; margin-top: 6px; }
+.urgency-note svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+/* Hero right panel */
+.hero-right { background: white; border-left: 1px solid var(--sand); padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; animation: fadeUp 0.9s 0.15s ease both; }

@@ -1,0 +1,14 @@
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+
+.testimonials-section { padding: 100px 80px; background: #ede8df; }
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 52px; }
+.testimonial-card { background: white; padding: 36px 32px; border: 1px solid var(--sand); }
+.stars { display: flex; gap: 3px; margin-bottom: 18px; }
+.stars svg { width: 14px; height: 14px; color: var(--gold); }
+.testimonial-quote { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; line-height: 1.55; color: var(--charcoal); margin-bottom: 22px; font-style: italic; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.t-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--sand); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; color: var(--taupe); flex-shrink: 0; }
+.t-name { font-size: 0.78rem; font-weight: 500; color: var(--charcoal); letter-spacing: 0.04em; }
+.t-detail { font-size: 0.70rem; color: var(--taupe); font-weight: 300; }

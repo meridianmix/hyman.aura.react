@@ -1,0 +1,15 @@
+/* ============================================================
+   BENEFITS
+   ============================================================ */
+
+.benefits-section { padding: 100px 80px; background: #f7f1eb; }
+.benefits-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 56px; }
+
+.benefits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+.benefit-card { background: white; padding: 36px 28px; border: 1px solid var(--sand); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+.benefit-card:hover { transform: translateY(-5px); box-shadow: 0 14px 48px rgba(42,36,32,0.08); }
+.benefit-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--blush), var(--green-light)); transform: scaleX(0); transition: transform 0.3s; }
+.benefit-card:hover::before { transform: scaleX(1); }
+.benefit-icon { font-size: 1.8rem; margin-bottom: 18px; }
+.benefit-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--charcoal); margin-bottom: 10px; }
+.benefit-body { font-size: 0.82rem; line-height: 1.75; color: var(--taupe); font-weight: 300; }

@@ -1,0 +1,10 @@
+/* ============================================================
+   MID CTA
+   ============================================================ */
+
+.mid-cta { background: var(--blush-deep); padding: 56px 80px; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+.mid-cta-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: white; line-height: 1.15; margin-bottom: 10px; }
+.mid-cta-title em { font-style: italic; }
+.mid-cta-sub { font-size: 0.88rem; color: rgba(255,255,255,0.7); font-weight: 300; line-height: 1.6; }
+.mid-cta-btn { display: inline-block; padding: 18px 44px; background: white; color: var(--blush-deep); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.20em; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: all 0.3s; }
+.mid-cta-btn:hover { background: var(--charcoal); color: white; }

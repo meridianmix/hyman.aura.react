@@ -1,0 +1,17 @@
+/* ============================================================
+   CONSULT SECTION
+   ============================================================ */
+
+.consult-section { padding: 100px 80px; background: #faf8f5; }
+.consult-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.consult-left .section-title { margin-bottom: 18px; }
+.consult-left .section-sub { margin-bottom: 36px; }
+.why-list { display: flex; flex-direction: column; gap: 18px; }
+.why-item { display: flex; gap: 16px; align-items: flex-start; }
+.why-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--blush-deep); line-height: 1; flex-shrink: 0; width: 28px; }
+.why-title { font-size: 0.84rem; font-weight: 500; color: var(--charcoal); margin-bottom: 4px; letter-spacing: 0.02em; }
+.why-text { font-size: 0.80rem; color: var(--taupe); line-height: 1.7; font-weight: 300; }
+
+.consult-form-box { background: white; border: 1px solid var(--sand); padding: 48px 44px; box-shadow: 0 8px 56px rgba(42,36,32,0.06); position: sticky; top: 100px; }
+.consult-form-box .form-card-title { font-size: 1.65rem; margin-bottom: 6px; }
+.consult-form-box .form-card-sub { margin-bottom: 24px; }

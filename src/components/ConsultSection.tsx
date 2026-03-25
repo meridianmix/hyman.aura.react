@@ -1,4 +1,4 @@
-import ConsultationForm from './ConsultationForm';
+import { Link } from 'react-router-dom';
 
 const WHY_ITEMS = [
   {
@@ -60,16 +60,10 @@ export default function ConsultSection() {
           </div>
         </div>
 
-        <div className="consult-form-box">
-          <p className="form-card-label">Book a Consultation</p>
-          <ConsultationForm
-            formId="bottomForm"
-            showTitle
-            titleText="Request <em>Your Spot</em>"
-            subText="Limited consultations available each month. Spaces reserved on a first-come basis."
-            showDivider
-            trustVariant="bottom"
-          />
+        <div className="consult-form-box" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <Link to="/apply" className="nav-cta" style={{ fontSize: '1rem', padding: '18px 40px' }}>
+            Book My Consultation →
+          </Link>
         </div>
       </div>
     </section>

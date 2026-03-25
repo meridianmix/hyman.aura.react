@@ -1,0 +1,15 @@
+/* ============================================================
+   EPISODE RECAP
+   ============================================================ */
+
+.episode-section { padding: 100px 80px; background: #f0ebe4; }
+.episode-header { text-align: center; margin-bottom: 52px; }
+.episode-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.episode-card { background: white; padding: 36px 32px; border: 1px solid var(--sand); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+.episode-card:hover { transform: translateY(-5px); box-shadow: 0 14px 48px rgba(42,36,32,0.08); }
+.episode-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--blush), var(--green-light)); transform: scaleX(0); transition: transform 0.3s; }
+.episode-card:hover::before { transform: scaleX(1); }
+.episode-card-icon { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; flex-shrink: 0; }
+.episode-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 500; color: var(--charcoal); margin-bottom: 12px; line-height: 1.25; }
+.episode-card-body { font-size: 0.84rem; line-height: 1.75; color: var(--taupe); font-weight: 300; }
+.episode-disclaimer { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; color: rgba(107,92,82,0.55); margin-top: 40px; font-style: italic; text-align: center; }

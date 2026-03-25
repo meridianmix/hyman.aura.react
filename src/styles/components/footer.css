@@ -1,0 +1,14 @@
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+footer { background: var(--charcoal); padding: 44px 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ivory); }
+.footer-logo span { display: block; font-size: 0.58rem; font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 0.2em; color: rgba(250,248,245,0.38); margin-top: 3px; }
+.footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
+.footer-link { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,248,245,0.4); text-decoration: none; transition: color 0.3s; }
+.footer-link:hover { color: var(--ivory); }
+.footer-phone { font-size: 0.80rem; color: rgba(250,248,245,0.5); text-decoration: none; letter-spacing: 0.04em; }
+
+.disclaimer-bar { background: rgba(30,24,20,0.98); padding: 16px 80px; }
+.disclaimer-bar p { font-size: 0.64rem; color: rgba(250,248,245,0.28); line-height: 1.65; font-weight: 300; }

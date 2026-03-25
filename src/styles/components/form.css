@@ -1,0 +1,24 @@
+/* ============================================================
+   FORM — Shared consultation form styles
+   ============================================================ */
+
+.form-card-label { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blush-deep); font-weight: 500; margin-bottom: 10px; }
+.form-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.85rem; font-weight: 400; color: var(--charcoal); line-height: 1.15; margin-bottom: 8px; }
+.form-card-title em { font-style: italic; color: var(--blush-deep); }
+.form-card-sub { font-size: 0.84rem; color: var(--taupe); line-height: 1.65; margin-bottom: 28px; font-weight: 300; }
+.form-divider { height: 1px; background: var(--sand); margin-bottom: 28px; }
+
+.f-label { display: block; font-size: 0.63rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--taupe); font-weight: 400; margin-bottom: 7px; }
+.f-input { width: 100%; padding: 12px 14px; border: 1px solid var(--sand); background: var(--ivory); font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: var(--charcoal); font-weight: 300; outline: none; transition: border-color 0.25s; margin-bottom: 16px; appearance: none; -webkit-appearance: none; }
+.f-input:focus { border-color: var(--blush-deep); background: white; }
+.f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.f-submit { width: 100%; padding: 17px; background: var(--charcoal); color: var(--ivory); border: none; font-family: 'DM Sans', sans-serif; font-size: 0.74rem; font-weight: 500; letter-spacing: 0.20em; text-transform: uppercase; cursor: pointer; transition: background 0.3s; margin-bottom: 14px; }
+.f-submit:hover:not(:disabled) { background: var(--green); }
+.f-submit:disabled { opacity: 0.7; cursor: not-allowed; }
+
+.form-trust { display: flex; flex-direction: column; gap: 7px; }
+.trust-line { display: flex; align-items: center; gap: 8px; font-size: 0.72rem; color: var(--taupe); font-weight: 300; }
+.trust-line svg { width: 13px; height: 13px; color: var(--green); flex-shrink: 0; }
+
+.form-error { color: #c0392b; font-size: 0.82rem; margin-bottom: 12px; padding: 10px 14px; background: rgba(192,57,43,0.06); border: 1px solid rgba(192,57,43,0.2); }
+.field-error { color: #c0392b; font-size: 0.78rem; margin-top: -10px; margin-bottom: 8px; }

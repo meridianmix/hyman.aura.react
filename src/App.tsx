@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Lenis from '@studio-freight/lenis';
 import Home from './pages/Home';
 import ThankYou from './pages/ThankYou';
+import Apply from './pages/Apply';
 import { useScrollRestoration } from './hooks/useScrollRestoration';
 import { usePageAnalytics } from './hooks/usePageAnalytics';
 
@@ -14,6 +15,7 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/thank-you" element={<ThankYou />} />
+      <Route path="/apply" element={<Apply />} />
     </Routes>
   );
 }

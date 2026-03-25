@@ -1,0 +1,10 @@
+/* ============================================================
+   PROOF STRIP
+   ============================================================ */
+
+.proof-strip { background: var(--charcoal); border-top: none; border-bottom: none; padding: 22px 80px; display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
+.proof-item { display: flex; align-items: center; gap: 10px; }
+.proof-item svg { width: 16px; height: 16px; color: var(--gold); flex-shrink: 0; }
+.proof-item span { font-size: 0.74rem; letter-spacing: 0.1em; color: var(--taupe); font-weight: 400; }
+.proof-item strong { font-weight: 500; color: var(--charcoal); }
+.proof-sep { width: 1px; height: 20px; background: var(--sand); }

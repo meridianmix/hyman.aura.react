@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function MidCta() {
   return (
     <div className="mid-cta">
@@ -10,7 +12,7 @@ export default function MidCta() {
           Find out in one conversation if you&rsquo;re a candidate &mdash; no commitment required.
         </p>
       </div>
-      <a href="#consult" className="mid-cta-btn">Book Your Consultation &rarr;</a>
+      <Link to="/apply" className="mid-cta-btn">Book Your Consultation &rarr;</Link>
     </div>
   );
 }

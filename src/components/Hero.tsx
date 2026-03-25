@@ -292,7 +292,7 @@ export default function Hero() {
           className="form-card"
           style={{
             background: 'white',
-            borderRadius: '16px',
+            borderRadius: '1rem',
             padding: '36px',
             boxShadow: '0 4px 24px rgba(42,36,32,0.07)',
           }}

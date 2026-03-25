@@ -1,0 +1,41 @@
+/* ============================================================
+   BASE — CSS variables, reset, body, shared utilities, keyframes
+   ============================================================ */
+
+:root {
+  --ivory: #faf8f5;
+  --warm-white: #f5f2ec;
+  --sand: #e8e0d0;
+  --blush: #c9a99a;
+  --blush-deep: #b8897a;
+  --sage: #8a9e8c;
+  --charcoal: #1a1a1a;
+  --taupe: #6b5f54;
+  --gold: #c8a96e;
+  --gold-light: #e8d5a3;
+  --green: #4a6e5e;
+  --green-light: #5c7a6e;
+  --urgent: #9e4a3a;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: auto; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--ivory);
+  color: var(--charcoal);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* Shared section utilities */
+.section-eyebrow { font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--blush-deep); font-weight: 500; margin-bottom: 14px; }
+.section-title { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(1.9rem, 3vw, 2.7rem); line-height: 1.1; color: var(--charcoal); }
+.section-title em { font-style: italic; color: var(--blush-deep); }
+.section-sub { font-size: 0.92rem; line-height: 1.8; color: var(--taupe); font-weight: 300; margin-top: 16px; }
+
+/* Keyframes */
+@keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }

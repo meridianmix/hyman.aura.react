@@ -1,0 +1,31 @@
+/* ============================================================
+   THANK YOU PAGE
+   ============================================================ */
+
+.thank-you-hero { min-height: calc(100vh - 200px); display: flex; align-items: center; justify-content: center; padding: 80px 40px; background: linear-gradient(180deg, var(--ivory) 0%, #f0ebe4 100%); position: relative; }
+.thank-you-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 30%, rgba(138,158,140,0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 70%, rgba(201,169,154,0.08) 0%, transparent 50%); pointer-events: none; }
+.thank-you-container { max-width: 640px; text-align: center; position: relative; z-index: 1; }
+.thank-you-icon { width: 80px; height: 80px; margin: 0 auto 32px; background: var(--green-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: scaleIn 0.6s ease both; }
+.thank-you-icon svg { width: 36px; height: 36px; color: white; }
+.thank-you-eyebrow { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-light); margin-bottom: 16px; animation: fadeUp 0.8s ease both; }
+.thank-you-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.15; margin-bottom: 20px; animation: fadeUp 0.8s 0.1s ease both; }
+.thank-you-title em { font-style: italic; color: var(--blush-deep); }
+.thank-you-subtitle { font-family: 'DM Sans', sans-serif; font-size: 1.05rem; color: var(--taupe); line-height: 1.75; font-weight: 300; margin-bottom: 40px; animation: fadeUp 0.8s 0.2s ease both; }
+.next-steps-card { background: white; border-radius: 16px; padding: 40px; box-shadow: 0 4px 32px rgba(42,36,32,0.06); text-align: left; margin-bottom: 40px; animation: fadeUp 0.8s 0.3s ease both; }
+.next-steps-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--charcoal); margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+.next-steps-title svg { width: 22px; height: 22px; color: var(--blush-deep); }
+.step-item { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--sand); }
+.step-item:last-child { border-bottom: none; padding-bottom: 0; }
+.step-item:first-child { padding-top: 0; }
+.step-number { width: 28px; height: 28px; background: var(--ivory); border: 1px solid var(--sand); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 0.85rem; color: var(--blush-deep); flex-shrink: 0; }
+.step-content h4 { font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 500; color: var(--charcoal); margin-bottom: 4px; }
+.step-content p { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; color: var(--taupe); font-weight: 300; line-height: 1.6; }
+.thank-you-actions { display: flex; flex-direction: column; gap: 16px; animation: fadeUp 0.8s 0.4s ease both; }
+.btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 18px 36px; background: var(--charcoal); color: var(--ivory); font-family: 'DM Sans', sans-serif; font-size: 0.74rem; font-weight: 500; letter-spacing: 0.20em; text-transform: uppercase; text-decoration: none; transition: background 0.3s; }
+.btn-primary:hover { background: var(--green); }
+.btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 36px; background: transparent; color: var(--charcoal); font-family: 'DM Sans', sans-serif; font-size: 0.74rem; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--sand); transition: all 0.3s; }
+.btn-secondary:hover { border-color: var(--charcoal); }
+.contact-info { margin-top: 32px; padding-top: 32px; border-top: 1px solid var(--sand); animation: fadeUp 0.8s 0.5s ease both; }
+.contact-info p { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; color: var(--taupe); font-weight: 300; }
+.contact-info a { color: var(--blush-deep); text-decoration: none; font-weight: 500; }
+.contact-info a:hover { text-decoration: underline; }

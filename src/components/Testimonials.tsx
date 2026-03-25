@@ -1,28 +1,23 @@
 import { Icon } from '@iconify/react';
 
-const StarIcon = () => <Icon icon="solar:star-bold" />;
-
 const TESTIMONIALS = [
   {
-    quote:
-      "\u201cI\u2019d had implants for 12 years and always felt something was off. After fat transfer with Dr. Kanevsky, I finally feel like myself. The results are so natural my husband can\u2019t believe the difference.\u201d",
-    initial: 'S',
+    quote: "I'd had implants for 12 years and always felt something was off. After fat transfer with Dr. Kanevsky, I finally feel like myself. The results are so natural my husband can't believe the difference.",
     name: 'Sarah M.',
-    detail: 'Implant removal + fat transfer \u00b7 Beverly Hills',
+    detail: 'Implant removal + fat transfer · Beverly Hills',
+    avatar: 'https://i.pravatar.cc/80?img=20',
   },
   {
-    quote:
-      "\u201cI heard Dr. Kanevsky on the podcast and immediately booked. The Alloclae procedure gave me exactly what I wanted \u2014 no implants, beautiful shape, and zero anxiety about what\u2019s in my body.\u201d",
-    initial: 'L',
+    quote: "I heard Dr. Kanevsky on the podcast and immediately booked. The Alloclae procedure gave me exactly what I wanted — no implants, beautiful shape, and zero anxiety about what's in my body.",
     name: 'Lauren K.',
-    detail: 'Alloclae procedure \u00b7 Came from podcast',
+    detail: 'Alloclae procedure · Came from podcast',
+    avatar: 'https://i.pravatar.cc/80?img=32',
   },
   {
-    quote:
-      "\u201cThe bonus I didn\u2019t expect? My waist is smaller now too. Dr. Kanevsky took fat from my abdomen \u2014 it\u2019s like getting a tummy tuck and augmentation at the same time. I tell every woman I know.\u201d",
-    initial: 'M',
+    quote: "The bonus I didn't expect? My waist is smaller now too. Dr. Kanevsky took fat from my abdomen — it's like getting a tummy tuck and augmentation at the same time. I tell every woman I know.",
     name: 'Michelle T.',
-    detail: 'Fat transfer augmentation \u00b7 Los Angeles',
+    detail: 'Fat transfer augmentation · Los Angeles',
+    avatar: 'https://i.pravatar.cc/80?img=51',
   },
 ];
 
@@ -34,14 +29,16 @@ export default function Testimonials() {
       <div className="testimonials-grid">
         {TESTIMONIALS.map((t) => (
           <div key={t.name} className="testimonial-card">
-            <div className="stars">
-              {[...Array(5)].map((_, i) => <StarIcon key={i} />)}
-            </div>
             <p className="testimonial-quote">{t.quote}</p>
             <div className="testimonial-author">
-              <div className="t-avatar">{t.initial}</div>
+              <img src={t.avatar} alt={t.name} className="t-avatar" />
               <div>
                 <p className="t-name">{t.name}</p>
+                <div className="stars">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} icon="solar:star-bold" width="13" height="13" />
+                  ))}
+                </div>
                 <p className="t-detail">{t.detail}</p>
               </div>
             </div>

@@ -32,7 +32,7 @@ export default function Benefits() {
           <h2 className="section-title">What Implants <em>Can&rsquo;t</em> Give You</h2>
         </div>
         <p className="section-sub">
-          Dr. Kanevsky and Dr. Hyman discussed it plainly on the podcast: your body has everything
+          <strong>Dr. Kanevsky</strong> and <strong>Dr. Hyman</strong> discussed it plainly on the podcast: your body has everything
           it needs. Fat transfer and Alloclae simply harness it &mdash; with zero foreign materials
           and results that feel entirely natural.
         </p>

@@ -13,7 +13,7 @@
 
 .hero-eyebrow { font-size: 0.70rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--blush-deep); font-weight: 500; margin-bottom: 16px; }
 
-.hero-title { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.6rem, 4vw, 3.8rem); line-height: 1.05; color: var(--charcoal); margin-bottom: 22px; }
+.hero-title { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.9rem, 4.5vw, 4.2rem); line-height: 1.05; color: var(--charcoal); margin-bottom: 22px; }
 .hero-title em { font-style: italic; color: var(--blush-deep); }
 
 .hero-proof-row { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; }
@@ -23,7 +23,7 @@
 .proof-text { font-size: 0.80rem; color: var(--taupe); font-weight: 300; }
 .proof-text strong { font-weight: 500; color: var(--charcoal); }
 
-.hero-desc { font-size: 1.02rem; line-height: 1.8; color: var(--taupe); max-width: 500px; margin-bottom: 36px; font-weight: 300; }
+.hero-desc { font-size: 1.0625rem; line-height: 1.8; color: var(--taupe); max-width: 500px; margin-bottom: 36px; font-weight: 400; }
 .hero-desc strong { color: var(--charcoal); font-weight: 500; }
 
 .hero-bullets { display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px; }

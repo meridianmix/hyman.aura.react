@@ -3,15 +3,52 @@
    ============================================================ */
 
 .consult-section { padding: 100px 80px; background: #faf8f5; }
-.consult-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.consult-left .section-title { margin-bottom: 18px; }
-.consult-left .section-sub { margin-bottom: 36px; }
-.why-list { display: flex; flex-direction: column; gap: 18px; }
-.why-item { display: flex; gap: 16px; align-items: flex-start; }
-.why-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--blush-deep); line-height: 1; flex-shrink: 0; width: 28px; }
-.why-title { font-size: 0.84rem; font-weight: 500; color: var(--charcoal); margin-bottom: 4px; letter-spacing: 0.02em; }
-.why-text { font-size: 0.80rem; color: var(--taupe); line-height: 1.7; font-weight: 300; }
 
-.consult-form-box { background: white; border: 1px solid var(--sand); padding: 48px 44px; box-shadow: 0 8px 56px rgba(42,36,32,0.06); position: sticky; top: 100px; }
-.consult-form-box .form-card-title { font-size: 1.65rem; margin-bottom: 6px; }
-.consult-form-box .form-card-sub { margin-bottom: 24px; }
+.consult-inner { max-width: 720px; margin: 0 auto; }
+
+/* Header */
+.consult-header { margin-bottom: 52px; }
+.consult-header .section-title { margin-bottom: 16px; }
+.consult-header .section-sub { color: var(--taupe); line-height: 1.75; }
+
+/* Why list */
+.why-list { display: flex; flex-direction: column; margin-bottom: 52px; }
+
+.why-card { display: flex; gap: 28px; align-items: flex-start; padding: 28px 0; border-bottom: 1px solid var(--sand); }
+.why-card:first-child { padding-top: 0; }
+.why-card:last-child { border-bottom: none; padding-bottom: 0; }
+
+.why-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: var(--blush-deep);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 52px;
+  padding-top: 2px;
+}
+
+.why-content { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
+.why-title { font-size: 1.05rem; font-weight: 600; color: var(--charcoal); letter-spacing: 0.01em; }
+.why-text { font-size: 1rem; color: var(--taupe); line-height: 1.7; font-weight: 400; }
+
+/* CTA */
+.consult-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+
+.consult-cta-btn {
+  display: inline-block;
+  padding: 18px 52px;
+  background: var(--charcoal);
+  color: var(--ivory);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: background 0.3s;
+}
+.consult-cta-btn:hover { background: var(--green); }
+
+.consult-cta-note { font-size: 0.75rem; color: var(--taupe); font-weight: 400; letter-spacing: 0.06em; }

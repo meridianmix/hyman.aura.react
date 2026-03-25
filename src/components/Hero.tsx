@@ -242,24 +242,24 @@ export default function Hero() {
         <h1
           style={{
             fontFamily: "'Cormorant Garamond',serif",
-            fontSize: 'clamp(2rem,3.2vw,3rem)',
+            fontSize: 'clamp(2.6rem,4vw,3.8rem)',
             fontWeight: 400,
             color: '#2a2420',
-            lineHeight: 1.18,
+            lineHeight: 1.1,
             marginBottom: '20px',
           }}
         >
           You Heard It on
           <br />
-          <em style={{ fontStyle: 'italic', color: '#c9a99a' }}>The Dr. Hyman Show.</em>
+          <em style={{ fontStyle: 'italic', color: '#c9a99a', fontWeight: 500 }}>The Dr. Hyman Show.</em>
         </h1>
         <p
           style={{
             fontFamily: "'DM Sans',sans-serif",
-            fontSize: '0.97rem',
+            fontSize: '1.0625rem',
             lineHeight: 1.8,
             color: '#6b5c52',
-            fontWeight: 300,
+            fontWeight: 400,
             marginBottom: '36px',
           }}
         >
@@ -271,16 +271,22 @@ export default function Hero() {
         {/* Proof row */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '36px' }}>
           <div className="proof-avatar-stack" style={{ display: 'flex' }}>
-            {['S', 'M', 'L', 'K'].map((letter) => (
-              <div key={letter} className="proof-avatar">{letter}</div>
+            {[47, 49, 44, 48].map((id) => (
+              <img
+                key={id}
+                src={`https://i.pravatar.cc/40?img=${id}`}
+                alt="Patient"
+                className="proof-avatar"
+                style={{ objectFit: 'cover' }}
+              />
             ))}
           </div>
           <p
             style={{
               fontFamily: "'DM Sans',sans-serif",
-              fontSize: '0.82rem',
+              fontSize: '0.95rem',
               color: '#6b5c52',
-              fontWeight: 300,
+              fontWeight: 400,
             }}
           >
             <strong style={{ fontWeight: 500, color: '#2a2420' }}>5,000+</strong> patients chose natural over implants

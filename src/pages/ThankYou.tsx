@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { Icon } from '@iconify/react';
 import { Check } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { getStoredFormData, fireLeadEvent } from '../utils/analytics';

@@ -2,7 +2,7 @@
    HERO
    ============================================================ */
 
-.hero { display: grid; grid-template-columns: 1.1fr 0.9fr; min-height: calc(100vh - 88px); position: relative; }
+.hero { display: grid; grid-template-columns: 1.1fr 0.9fr; height: 100vh; max-height: 100vh; overflow: hidden; position: relative; }
 .hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 15% 80%, rgba(138,158,140,0.07) 0%, transparent 55%), radial-gradient(ellipse at 85% 15%, rgba(201,169,154,0.09) 0%, transparent 50%); pointer-events: none; }
 
 .hero-left { padding: 72px 56px 72px 80px; display: flex; flex-direction: column; justify-content: center; animation: fadeUp 0.9s ease both; }
@@ -45,4 +45,4 @@
 .urgency-note svg { width: 13px; height: 13px; flex-shrink: 0; }
 
 /* Hero right panel */
-.hero-right { background: white; border-left: 1px solid var(--sand); padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; animation: fadeUp 0.9s 0.15s ease both; }
+.hero-right { background: white; border-left: 1px solid var(--sand); padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; overflow-y: auto; min-height: 0; animation: fadeUp 0.9s 0.15s ease both; }

@@ -1,4 +1,3 @@
-import AnnouncementBar from '../components/AnnouncementBar';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import ConsultationForm from '../components/ConsultationForm';
@@ -6,7 +5,6 @@ import ConsultationForm from '../components/ConsultationForm';
 export default function Apply() {
   return (
     <>
-      <AnnouncementBar />
       <Nav consultHref="#apply-form" />
 
       <main

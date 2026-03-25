@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Icon } from '@iconify/react';
-import AnnouncementBar from '../components/AnnouncementBar';
+import { Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
@@ -18,13 +18,12 @@ export default function ThankYou() {
 
   return (
     <>
-      <AnnouncementBar />
       <Nav consultHref="/#consult" />
 
       <section className="thank-you-hero">
         <div className="thank-you-container">
           <div className="thank-you-icon">
-            <Icon icon="solar:check-circle-bold" />
+            <Check strokeWidth={3} />
           </div>
 
           <p className="thank-you-eyebrow">Consultation Request Received</p>
@@ -40,7 +39,6 @@ export default function ThankYou() {
 
           <div className="next-steps-card">
             <h3 className="next-steps-title">
-              <Icon icon="solar:clock-circle-bold" />
               What Happens Next
             </h3>
 
@@ -79,11 +77,7 @@ export default function ThankYou() {
           </div>
 
           <div className="thank-you-actions">
-            <Link to="/" className="btn-primary">
-              <Icon icon="solar:home-bold" width="16" height="16" />
-              Return to Homepage
-            </Link>
-            <a href="tel:+13107734596" className="btn-secondary">
+            <a href="tel:+13107734596" className="btn-primary">
               <Icon icon="solar:phone-bold" width="16" height="16" />
               Call Us Now
             </a>

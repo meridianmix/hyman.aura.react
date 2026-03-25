@@ -195,9 +195,9 @@ export default function ConsultationForm({
       {subText && <p className="form-card-sub">{subText}</p>}
       {showDivider && <div className="form-divider" />}
 
-      <form id={formId} onSubmit={handleSubmit} onFocus={handleFocusIn}>
+      <form id={formId} className="consult-form" onSubmit={handleSubmit} onFocus={handleFocusIn}>
         <div className="f-row">
-          <div>
+          <div className="f-field">
             <label className="f-label">First Name</label>
             <input
               type="text"
@@ -209,7 +209,7 @@ export default function ConsultationForm({
               onChange={handleChange}
             />
           </div>
-          <div>
+          <div className="f-field">
             <label className="f-label">Last Name</label>
             <input
               type="text"
@@ -223,37 +223,53 @@ export default function ConsultationForm({
           </div>
         </div>
 
-        <label className="f-label">Email Address</label>
-        <input
-          type="email"
-          name="email"
-          className="f-input"
-          placeholder="jane@email.com"
-          required
-          value={values.email}
-          onChange={handleChange}
-          onBlur={handleEmailBlur}
-          style={emailError ? { borderColor: '#c0392b' } : undefined}
-        />
+        <div className="f-field">
+          <label className="f-label">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            className="f-input"
+            placeholder="jane@email.com"
+            required
+            value={values.email}
+            onChange={handleChange}
+            onBlur={handleEmailBlur}
+            style={emailError ? { borderColor: '#c0392b' } : undefined}
+          />
+        </div>
         {emailError && <p className="field-error">{emailError}</p>}
 
-        <label className="f-label">Phone Number</label>
-        <input
-          type="tel"
-          name="phone"
-          className="f-input"
-          placeholder="(310) 000-0000"
-          value={values.phone}
-          onChange={handleChange}
-        />
+        <div className="f-field">
+          <label className="f-label">Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            className="f-input"
+            placeholder="(310) 000-0000"
+            value={values.phone}
+            onChange={handleChange}
+          />
+        </div>
 
-        <label className="f-label">I&rsquo;m interested in</label>
-        <select name="interest" className="f-input" value={values.interest} onChange={handleChange}>
-          <option value="">Choose your goal&hellip;</option>
-          {INTEREST_OPTIONS.map((opt) => (
-            <option key={opt}>{opt}</option>
-          ))}
-        </select>
+        <div className="f-field">
+          <label className="f-label">I&rsquo;m interested in</label>
+          <div className="f-select-wrap">
+            <select
+              name="interest"
+              className={`f-input ${values.interest ? '' : 'f-input-unselected'}`.trim()}
+              value={values.interest}
+              onChange={handleChange}
+            >
+              <option value="" disabled>
+                Choose your goal&hellip;
+              </option>
+              {INTEREST_OPTIONS.map((opt) => (
+                <option key={opt}>{opt}</option>
+              ))}
+            </select>
+            <Icon icon="solar:alt-arrow-down-linear" className="f-select-icon" />
+          </div>
+        </div>
 
         {submitError && <p className="form-error">{submitError}</p>}
 

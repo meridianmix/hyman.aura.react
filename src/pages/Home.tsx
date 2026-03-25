@@ -1,4 +1,3 @@
-import AnnouncementBar from "../components/AnnouncementBar";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import EpisodeRecap from "../components/EpisodeRecap";
@@ -13,7 +12,6 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      <AnnouncementBar />
       <Nav />
       <Hero />
       <EpisodeRecap />

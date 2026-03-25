@@ -48,7 +48,6 @@ export default function Hero() {
   return (
     <section
       className="hero"
-      style={{ minHeight: '100vh' }}
     >
       {/* LEFT: Carousel */}
       <div style={{ position: 'relative', overflow: 'hidden', minHeight: '600px' }}>

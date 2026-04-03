@@ -4,13 +4,13 @@ import ConsultationForm from './ConsultationForm';
 
 const SLIDES = [
   {
-    src: 'https://ik.imagekit.io/efnhxhh9p/hyman/image_1.jpeg?w=1200&h=800&fit=crop',
+    src: 'https://ik.imagekit.io/basecamp/hyman/image_1.jpeg?w=1200&h=800&fit=crop',
     alt: 'Dr. Kanevsky and Dr. Mark Hyman',
     caption: 'Dr. Kanevsky & Dr. Mark Hyman',
     objectPosition: 'center top',
   },
   {
-    src: 'https://ik.imagekit.io/efnhxhh9p/hyman/image_2.jpeg?w=1200&h=800&fit=crop',
+    src: 'https://ik.imagekit.io/basecamp/hyman/image_2.jpeg?w=1200&h=800&fit=crop',
     alt: 'Recording the episode',
     caption: 'Recording Day \u2014 The Dr. Hyman Show',
     objectPosition: 'center 20%',
